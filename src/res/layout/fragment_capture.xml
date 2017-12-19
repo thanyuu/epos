@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="0x106000d" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:id="@+id/capture_preview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@+id/capture_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/capture_mask_top" android:background="@mipmap/shadow" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7801" android:layout_alignParentTop="true" />
+            <RelativeLayout android:id="@+id/capture_crop_view" android:background="@drawable/qr_code_bg" android:layout_width="UNKNOWN_DATA_0xc801" android:layout_height="UNKNOWN_DATA_0xc801" android:layout_below="@+id/capture_mask_top" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/capture_scan_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@mipmap/scan_line" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="#a1a1a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="将二维码放入框内，即可自动扫描" android:layout_below="@+id/capture_crop_view" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@+id/capture_mask_bottom" android:background="@mipmap/shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/capture_crop_view" android:layout_alignParentBottom="true" />
+            <Button android:textSize="17sp" android:id="@+id/btn_cancle" android:background="#fef740" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01" android:text="@string/cancle" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@+id/capture_mask_left" android:background="@mipmap/shadow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/capture_crop_view" android:layout_above="@+id/capture_mask_bottom" android:layout_below="@+id/capture_mask_top" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/capture_mask_right" android:background="@mipmap/shadow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/capture_crop_view" android:layout_above="@+id/capture_mask_bottom" android:layout_below="@+id/capture_mask_top" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

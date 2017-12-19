@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/all" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@+id/re1" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_money1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="NZD" />
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_moneynumber1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="0" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/re2" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001" android:layout_below="@+id/re1">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_money2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="Total Payment(NZD)" />
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_moneynumber2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="#666666" android:id="@+id/tv_rate1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:text="Rate:4.457" android:layout_toRightOf="@+id/tv_money2" />
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/re_bottom1" android:background="#16a085" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_alignParentBottom="true"
+        <RelativeLayout android:textColor="#ffffff" android:id="@+id/btn_pay" android:background="@drawable/btn_select" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01" android:layout_marginLeft="40dp" android:text="@string/about_logout" android:layout_centerInParent="true">
+            <TextView android:textColor="#ffffff" android:id="@+id/tv_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/wechat_pay" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_pay" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0xf01" android:src="@mipmap/camera" />
+                <ImageView android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0xf01" android:src="@mipmap/arrow" />
+                <ImageView android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0xf01" android:src="@mipmap/qrcode" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:layout_above="@+id/re_bottom1">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn7" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="7" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn8" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="8" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn9" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="9" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/ll1">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn4" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="4" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn5" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="5" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn6" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="6" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/ll2">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn1" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="1" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn2" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="2" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn3" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="3" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/ll3">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btn0" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textStyle="bold" android:textColor="#239f86" android:id="@+id/btnpoint" android:background="@drawable/btn_selector" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="." android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <Button android:textSize="20sp" android:textColor="#239f86" android:id="@+id/btndel" android:background="@drawable/btn_selector" android:focusable="true" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="UNKNOWN_DATA_0x3701" android:text="Del" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:layout_below="@+id/re2">
+        <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/r_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reference" />
+        <EditText android:textSize="19sp" android:textColor="#666666" android:id="@+id/r_content" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_below="@+id/r_title" />
+        <CheckBox android:id="@+id/r_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/r_content" />
+        <TextView android:textColor="#666666" android:id="@+id/fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/r_checkbox" android:layout_below="@+id/r_content" />
+        <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text=" Service Fee Paid by Customer" android:layout_toRightOf="@+id/fee" android:layout_below="@+id/r_content" />
+        <TextView android:textColor="#666666" android:id="@+id/tv_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:text="Rate Info: 1NZD ≈ 4.457 CNY(Today)" android:layout_below="@+id/fee" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/l_nzd" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/tv_rate">
+            <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Payment (" />
+            <TextView android:textColor="#666666" android:id="@+id/tv_nzd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NZD" />
+            <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="):" />
+            <TextView android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_nzdnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/l_cny" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/l_nzd">
+            <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Payment (" />
+            <TextView android:textColor="@color/RED" android:id="@+id/tv_cny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CNY" />
+            <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="):" />
+            <TextView android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_cnynumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

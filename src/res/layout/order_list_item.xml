@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:minHeight="50dp">
+    <ImageView android:id="@+id/iv_status" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@mipmap/ic_launcher" />
+    <TextView android:textStyle="bold" android:textColor="#111111" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="$0.01" android:layout_toRightOf="@+id/iv_status" />
+    <TextView android:textSize="12sp" android:textColor="#111111" android:id="@+id/order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="(12321)" android:layout_toRightOf="@+id/tv_money" />
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#111111" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:text="2016-04-27 14:22:18" android:layout_below="@+id/tv_money" />
+    <TextView android:textStyle="bold" android:textColor="#111111" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" />
+    <ImageView android:id="@+id/logo" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_marginRight="10dp" android:layout_below="@+id/tv_status" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_head" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01">
+        <RelativeLayout android:id="@+id/re1" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textColor="#111111" android:id="@+id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alltime" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_arrow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <View android:background="#111111" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_alignParentBottom="true" />
+            <View android:background="#111111" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/re2" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textColor="#111111" android:id="@+id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allresult" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_arrow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <View android:background="#111111" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.epos.pospay.view.XListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:layout_below="@+id/ll_head" />
+</RelativeLayout>

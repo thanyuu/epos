@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fefefe" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01" android:minHeight="45dp">
+    <TextView android:textColor="#ff5a5a5a" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="#" android:layout_centerVertical="true" />
+    <View android:background="#333232" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="UNKNOWN_DATA_0x2d01" android:layout_marginLeft="70dp" />
+    <TextView android:textStyle="bold" android:textColor="#ff5a5a5a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:text="@string/datetime" android:layout_centerVertical="true" />
+    <View android:background="#333232" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="UNKNOWN_DATA_0x2d01" android:layout_marginLeft="280dp" />
+    <TextView android:textStyle="bold" android:textColor="#ff5a5a5a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="290dp" android:text="@string/state" android:layout_centerVertical="true" />
+    <View android:background="#333232" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentBottom="true" />
+</RelativeLayout>

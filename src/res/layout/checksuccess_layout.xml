@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@+id/re1" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_money1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="NZD" />
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_moneynumber1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/re2" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001" android:layout_below="@+id/re1">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_money2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="Total Payment(NZD)" />
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/tv_moneynumber2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:id="@+id/tv_rate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:text="Rate:4.457" android:layout_toRightOf="@+id/tv_money2" />
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/reference" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/re2">
+        <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#666666" android:id="@+id/r_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reference" />
+        <TextView android:textSize="19sp" android:textColor="#666666" android:id="@+id/r_content" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_below="@+id/r_title" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/tips" android:background="@drawable/checksuccess_back" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x6e01" android:layout_marginLeft="50dp" android:layout_marginTop="10dp" android:layout_marginRight="50dp" android:layout_below="@+id/reference">
+        <ImageView android:id="@+id/iv" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginTop="10dp" android:src="@mipmap/ok_circle" android:layout_centerHorizontal="true" />
+        <TextView android:id="@+id/tv_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/payment" android:layout_below="@+id/iv" android:layout_centerHorizontal="true" />
+        <Button android:textColor="#ffffff" android:id="@+id/tryagain" android:background="@drawable/print_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/tryagain" android:layout_below="@+id/tv_toast" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <Button android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/print_again" android:background="@drawable/paybackselect" android:layout_width="UNKNOWN_DATA_0xc801" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="@string/print" android:layout_below="@+id/tips" android:layout_centerInParent="true" />
+    <RelativeLayout android:background="#16a085" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_alignParentBottom="true">
+        <Button android:textColor="#ffffff" android:id="@+id/btn_print" android:background="@drawable/logout_button" android:layout_width="UNKNOWN_DATA_0xa001" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/print_back" android:layout_centerInParent="true" />
+        <TextView android:textColor="#16a085" android:id="@+id/text_print" android:layout_width="UNKNOWN_DATA_0xa01" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

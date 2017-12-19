@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="#111111" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/get_tv1" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/allresult" />
+    <TextView android:textColor="#111111" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/get_tv2" android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/getsuccess" android:layout_below="@+id/get_tv1" />
+    <TextView android:textColor="#111111" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/get_tv3" android:background="#d8d8d8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/geterror" android:layout_below="@+id/get_tv2" />
+    <TextView android:textColor="#111111" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/get_tv4" android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/getcancel" android:layout_below="@+id/get_tv3" />
+</RelativeLayout>
